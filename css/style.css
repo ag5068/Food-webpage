@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+/* Navigation bar: LOGO AND image */
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    height: 55px;
+    width: 50px;
+    margin: 3px 4px;
+}
+/* Navigation bar:List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+#navbar ul li a:hover{
+    background-color:white;
+    color: black;
+}
+#home{
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   height:480px;
+   align-items: center;
+   padding: 3px 200px;
+}
+#home::before{
+    content: "";
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    background:url('../bg.jpg')no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8; 
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+/* Services section  */
+#services{
+    display: flex;
+    margin: 20px;
+}
+#services .box{
+    border: 5px solid brown;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 23px;
+    background-color: rgb(233, 241, 250);
+}
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+services .box p{
+    font-family: 'Balsamiq Sans', cursive;
+}
+/* Clients Section */
+#clientsection{
+   /* position: relative/; */
+   height: 340px;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clientitems{
+    padding: 34px;
+}
+#clients img{
+    width:66px;
+    padding: 6px;
+    height: 124px;
+}
+#clientsection::before{
+    content: "";
+    position: absolute;
+    background: url('../logo/res.jpg');
+    width: 100%;
+    height: 56%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+  content: ""; 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background: url('../contact.jpg')no-repeat center center/cover;
+}
+#contact-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 34px;
+}
+#contact-box input,textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+/* footer section */
+footer{
+    background: black;
+    color: white;
+    padding: 3px 20px;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 52px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.btn{
+    font-size: 1.5rem;
+    background-color: blue;
+    color: aliceblue;
+    padding: 12px 20px;
+    border: 3px solid black;
+    border-radius: 7px;
+    margin: 12px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
